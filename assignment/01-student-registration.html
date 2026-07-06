@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student registration</title>
+    <style>
+        body{
+            background-color: beige;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .fromcontainer{
+            margin: 100px;
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input,select{
+            width:100%;
+            /* padding:8px; */
+            margin:8px 0;
+        }
+       /* .gender{
+        /* width: 10px; */
+       /* } */ 
+       .buttom{
+        color: white;
+        background-color:blue;
+        width: auto;
+        padding:10px;
+        border:none;
+       }
+    </style>
+</head>
+<body>
+    <div class="fromcontainer">
+        <form>
+        <label for="fname">Name:</label>
+        <br>
+        <input type="text">
+        <br>
+        <label for="Email">Email ID:</label>
+        <br>
+        <input type="email" placeholder="email">
+        <br>
+        <label for="number">Mobile no:</label>
+        <br>
+        <input type="tel">
+        <br>
+        <label for="gender">Gender:</label>
+        <label for="male">Male</label>
+        <input id="male" name="gender" type="radio">
+        <label for="Female">Female</label>
+        <input id="Female" name="gender" type="radio">
+        <label for="other">Other</label>
+        <input  id="other" name="gender" type="radio">
+        <br>
+        <label for="depRTMENT">Depertantment:</label>
+        <select>
+           <option>CSE</option>
+           <option>MCA</option>
+           <option>ME</option>
+            <OPtion>cst</OPtion>
+        </select>
+        <br>
+        <input class="buttom" type="submit">
+        </form>
+    </div>
+</body>
+</html>

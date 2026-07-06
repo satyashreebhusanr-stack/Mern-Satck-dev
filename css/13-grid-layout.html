@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridlayout</title>
+    <style>
+        .container {
+            display: grid;
+           /* grid-template-columns:100px 300px 500px;  */
+           /* grid-template-columns:1fr 12fr 10fr;   */
+           grid-template-columns: repeat(3, 100px);
+           grid-gap: 5px;
+           grid-auto-rows:minmax(50px, auto);
+           grid-auto-columns:minmax(100px, auto);
+           background-color:rgb(60, 255, 0)
+        }
+        .items {
+            background-color: rgb(173, 230, 185);
+            border:3px solid green;
+            border-radius:10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="items">Box 1Evaluate model quality with accuracy, robustness, fairness and risk-focused checks.</div>
+        <div class="items">Box 2</div>
+        <div class="items">Box 3</div>
+        <div class="items">Box 4</div>
+        <div class="items">Box 5</div>
+        <div class="items">Box 6</div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Top Section */
+.top_section{
+    background-image: url("developer.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_container img{
+    display: none; /* background image is used instead */
+}
+
+/* Work Section */
+.second_section{
+    background-color: #161619;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.second_section h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.second_section big{
+    font-size: 80px;
+}
+
+/* Cards Section */
+.third_section{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.third_section .content{
+    width: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    background-color: white;
+}
+
+.third_section .content:hover{
+    transform: scale(1.05);
+}
+
+.third_section img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.third_section h1{
+    font-size: 24px;
+    padding: 10px;
+}
+
+.third_section p{
+    padding: 10px;
+    line-height: 1.5;
+}
+
+/* Contact & About Section */
+.fourth_section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact_me,
+.about_me{
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+    color: white;
+}
+
+.contact_me{
+    background-color: #556b2f;
+}
+
+.about_me{
+    background-color: #7b241c;
+}
+
+.contact_me h1,
+.about_me h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.contact_me p,
+.about_me p{
+    line-height: 1.6;
+}
+
+/* Footer */
+.bottom_section{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    .second_section h1{
+        font-size: 30px;
+    }
+
+    .second_section big{
+        font-size: 45px;
+    }
+
+    .third_section{
+        padding: 20px;
+    }
+
+    .third_section .content{
+        width: 100%;
+    }
+}
