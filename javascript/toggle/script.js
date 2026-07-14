@@ -10,13 +10,13 @@ newBtn.addEventListener("click",() =>{
 //         currMode = "light";
 // document.querySelector("body").style.backgroundColor = "white"
 //     }
-//  document.body.style.backgroundColor = modes[index];
+ document.body.style.backgroundColor = modes[index];
 
-//     console.log("Current Color:", modes[index]);
+    console.log("Current Color:", modes[index]);
 
-//     index++;
-// if (index >= modes.length) {
-//         index = 0;
-//     }
+    index++;
+if (index >= modes.length) {
+        index = 0;
+    }
     console.log(currMode)
 })

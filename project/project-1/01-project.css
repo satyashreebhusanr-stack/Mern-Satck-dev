@@ -1,0 +1,44 @@
+.*{
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+.container{
+        background-color: azure;
+        border:6px solid black;
+        min-height: 100vh;
+        border-color: blue;
+     }
+.content{
+    max-width: 850px;
+    margin: auto;
+}
+.top_section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.top_section h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(17, 17, 57);
+    text-transform: uppercase;
+    align-items: flex-end;
+}
+.top_section h4{
+    text-align: end;
+    font-size: 30px;
+}
+.image_cointainer , img{
+    width: 300px;
+    height: 320px;
+     border-radius: 50%;
+}
+.about_section{
+    margin-top:50px;
+}
+.about_section h1{
+    font-size: 60px;
+    font-weight: 400;
+}

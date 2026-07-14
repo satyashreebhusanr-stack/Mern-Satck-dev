@@ -560,7 +560,8 @@ Datatype in javascript :-
   5. bigInt- big integer value
   6. string - sequence of charecters
   7. Symbol - in symbol we got one symbole of more than one value.
-
+1
+poi
  2. reference/non-primitive datatype
 
  - reference datatype are the type of datatype which can hold multiple element in asingle frame.
@@ -757,7 +758,7 @@ Methods of array :-
 
 
 
-pra  ctice question  ->
+practice question  ->
  
 1. foer a given array wtih marks of student -> [78,90,54,32,98,25,70].
 find the average marks of the student.
@@ -946,6 +947,202 @@ Event object:-
 practice task:-
 
 - create  a toggle button that changes the screen to dark mode when clicked & light mode when clicked again.
+
+
+ASynchronous :-
+- it means the code runs in a particular sequence of instruction give in the program.
+- Each instruction waits for the privious instruction to complete it's execution.
+ex.
+console.log("one")
+console.log("two")
+console.log("three")
+
+output -> one two three
+
+Asynchronous :-
+- Due to synchronous programing, sometimes imp. instruction get blocked due to some privious instruction, which causes a delay in the UI.
+
+ex.
+
+
+
+console.log("one")
+console.log("two")
+setTimeout(()=>{
+  cnsole.log("three")
+},4000)       //4000 ms = 4s
+console.log("four")
+console.log("five")
+
+output -> one , two , four , five , three
+
+
+callback in js :-
+
+- a callback function which passed as an argument of another function.
+
+
+
+callback hell :-
+
+- it's a nested call back stacked below one after another forming a pyramid structure.
+-  this style of programing becomes difficult to understand & manage.
+
+
+promise in js:-
+
+- it is a solution of call back  hell
+- syntax :-
+-  let promisre = nw Promise((resolve,reject) =>{
+  //statement
+})
+
+- a js promise object can be ->.
+
+1. pending -> the result is undefined
+2. resolved -> the result is a value (fulfilled)
+3. reject -> the result is an error
+
+
+
+- Promise .then((res) =>{
+  //statemnt
+})
+- promise .catch((err) =>{
+  //statement
+})
+
+Async & Await in js:-
+- async function always return a promise.
+- syntax:-
+ async function myfun(){
+  //statement
+ }
+ note :- await pauses the execution of it's surrounding async function until the promise is settled.
+
+
+API Handling / fetch API :-
+- the fetch API provides an interface for fetching data.
+- it uses request & response object.
+- the Fetch() methods is used to fetch a data.
+- syntax :-
+let demo = fetch(URL)
+- json -> js object notation
+
+status code of Node js:-
+
+- 200 -> ok
+- 201 -> created
+- 202 -> accepted
+- 300 -> multiple choice
+- 302 -> found
+- 400 -> bad request
+- 402 -> payment required
+- 404 -> Not found
+- 406 -> not accept
+- 408 -> request time out
+- 500 -> internal server  error
+- 502 -> bad gateway
+- 504 -> getway timeout
+
+React js-
+
+- react js is a fronted javascript library
+- react was developed by facebook by software engineer jorden walke.
+- react is also known as react js or react js.
+- basically react is a tool for building UI(user interface) components.
+
+
+NPX :-
+
+- npx stands for node package execute.
+- purpose -> it is an npm package runner bundle automatically with npm.
+- functin -> it allows your to run & execute js package directlly from the npm, without to install them permanentlly.
+- storage- > it download the package to a temporary cache memory, execute the command & clear it up right after
+
+NPM:-
+
+- npm stands for node package manger.
+- purpose -> it is thendefault package manager for node js.
+- function -> it installs , updates & deletes djavascript package and dependencies for our project.
+- storage -> it saves package permanentlly either locally inside our project's "node modules" folder or globally on our system.
+
+
+React js history :-
+
+- latest version of react js  is 19.2.7
+- initial release to the public was in july 2013.
+- react js was 1st used in 2011 for facebook's newsfeed features.
+- initially react gained lots of hate for the mix of javascript + HTML but in later stage or now daYS THESE DAYS 45% OF SOFTWARE developer used react js as thr core library for software development.
+- ".jsx"is the extention of react js.
+- jsx stands for javascript XML means javascript + HTML.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+- when you are installing react it will have multiple way to  install and setup but there are 22 comon way that we are using react js is
+
+1. CRA (create-react-app)
+2. vite(fatest way to install react js)
+
+File structure of a react js folder ->
+
+1. readme.md ->
+
+- we will use readme.md for write si=ome description or outline of our project.
+
+
+2. package.json ->
+
+- it will keep scripts , verdions details & dependency of our project.
+
+3. package-lock.json ->
+
+- it basically store dependency of package.json file.
+
+4. gitignore ->
+
+- files & folder ignored by git tracking....
+
+5. Src (source folder) -> 
+
+- it is the main source folder where we can create file & write code in it.
+
+6. public -> 
+- public is used totake our website logo that show publicly and we can store images and video in that public folder by creating separate separate folder.
+
+7. node_modules ->
+- auto manages externa; dependencies that need for execute the project and we can say say it is the god father of the react js project.
+
+Boiler print code
+- RAFCE-REact Arrow Fubctional Component Expression.
+- RFCE - React Functional Component Expression.
+
+
+
+
+props in React js:-
+
+- props stands for properties.
+- props are passed to components via HTML attribute.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
